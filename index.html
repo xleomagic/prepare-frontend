@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台灣發展歷史網頁</title>
+    <meta
+      name="description"
+      content="此網站介紹台灣過去70年的經濟發展與相關政策"
+    />
+
+    <link rel="shortcut icon" href="./taiwanIcon.png" />
+    <link rel="bookmark" href="./taiwanIcon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "GDP"],
+          ["1960", 34394],
+          ["1965", 114762],
+          ["1970", 231397],
+          ["1975", 601778],
+          ["1980", 1522459],
+          ["1985", 2535056],
+          ["1990", 4474288],
+          ["1995", 7391062],
+          ["2000", 10328549],
+          ["2005", 12036675],
+          ["2010", 14060345],
+        ]);
+
+        var options = {
+          title: "過去台灣60年GDP變化",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="twicon/twicon.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="headerTitle">
+        <i class="twicon-main-island"></i>台灣經濟發展歷史
+      </h1>
+      <h3 class="headerText">過去台灣發展得歷史以及相關政策</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html" class="active"
+            ><i class="twicon-main-island"></i> 首頁</a
+          >
+        </li>
+        <li>
+          <a href="./agriculture.html"
+            ><i class="twicon-electric-pot"></i> 農業改革</a
+          >
+        </li>
+        <li>
+          <a href="./industry.html"
+            ><i class="twicon-ntc-theater"></i> 工業改革</a
+          >
+        </li>
+        <li>
+          <a href="./economic.html"
+            ><i class="twicon-taipei101"></i> 經濟起飛</a
+          >
+        </li>
+        <!-- <li>
+          <a href="./author.html"><i class="twicon-l-dcard"></i> 關於作者</a>
+        </li> -->
+      </ul>
+    </nav>
+
+    <main>
+      <section class="left">
+        <img src="./img/taiwan1.jpeg" alt="" width="800" height="440" />
+        <p>
+          臺灣（俗字寫作台灣；臺灣話：Tâi-oân，臺羅：Tâi-uân；客家話：Thòi-vàn），西方亦稱福爾摩沙（葡萄牙語：Formosa），是位於東亞、太平洋西北側的島嶼，地處琉球群島與菲律賓群島之間，西隔臺灣海峽與中國大陸相望，周圍海域從3點鐘方向以順時鐘排序分別為太平洋（菲律賓海）、巴士海峽、南海、臺灣海峽、東海所環繞，為東亞島弧中一島。面積約3.6萬平方公里，為世界第38大島嶼，其中七成為山地與丘陵，平原則主要集中於西部沿海，地形海拔變化大。因北回歸線貫穿，氣候介於熱帶與亞熱帶地帶之間，北回歸線以北為副熱帶季風氣候、以南為熱帶季風氣候，自然景觀與生態系資源相當豐富而多元。人口約2千3百萬人，超過七成集中於西部的五大都會區，其中以行政中心臺北為核心的臺北都會區最大，總人口達700萬。族群構成以漢族、原住民族為兩大民族：原住民族由多個屬於南島民族的部族組成，漢族則依民系及移民年代的不同而分為閩南（河洛）、客家與外省族群，其中閩南為臺灣最大族群。
+        </p>
+        <br />
+        <p>
+          臺灣自古為原住民族世居之地，原住民族在17世紀中葉以前一直居於主體民族地位；隨著漢族不斷從中國大陸移入與墾殖、以及與平埔族原住民通婚，漢族遂取代原住民族成為臺灣的最大民族。自有信史記錄以來，臺灣歷史上曾經歷大肚王國、荷西時期、明鄭時期、清治時期、日治時期等多次政權遞嬗，最近一次為1945年10月戰後時期由中華民國統治。1949年中國國民黨在第二次國共內戰失利後，中華民國政府遷至台灣，造成兩岸分治的局面，1955年大陳島撤退後中華民國的有效統治範圍限縮至臺澎金馬與部分南海島礁，臺灣自此實質上成為中華民國的主要領土，並延續至今；而由此原因再加上一中原則，而導致現今「臺灣」常成為中華民國的通稱。
+        </p>
+        <br />
+        <p>
+          歷經1860年臺灣開港以來至日治時期所打下的現代化基礎，以及中華民國政府遷臺後運用美援所進行的一系列的經濟建設，加上國際上冷戰對峙的格局，使臺灣自1960年代起在經濟與社會發展上突飛猛進，締造舉世聞名的「臺灣奇蹟」，名列亞洲四小龍之一；之後在1990年代躋身已開發國家之列，目前無論人均所得或人類發展指數均具世界先進國家水準。臺灣擁有蓬勃的製造業及尖端科技，在半導體、資訊科技、通訊、電子精密製造等領域執牛耳。貿易方面主要透過高科技產業賺取外匯，經濟發展上以高科技產業與服務業為中心，亦朝向文化產業及觀光業發展。
+        </p>
+        <br />
+        <p>
+          台灣以移民為主的人文結構，亦帶來多元的政治觀點，自大航海時代以來，台灣文化就在明鄭、清朝的統治與西方列強的衝擊中經歷了多次大變動，近代則因為日本統治而發展出了日治台灣文化，之後在日本進行戰爭的擴張下推廣為皇民化運動直到二戰結束為止，中華民國政府遷台後隨著1987年戒嚴時代結束，臺灣逐漸淡化過往戒嚴時代形塑的中國史觀，政治上的自由化與民主化，以中國國民黨及民主進步黨兩黨為首的政黨政治、統獨議題、以及公民社會的形成，加之以印尼和越南新住民的定居，新增出臺灣主體意識與多元文化主義，使得臺灣文化呈現多元並立的面貌。
+          <br />
+        </p>
+      </section>
+
+      <section class="right">
+        <h4>台灣經濟發展小知識:你知道台灣在哪裡嗎?</h4>
+        <p>
+          台灣是太平洋上的一個小島。
+          它毗鄰中國，在島上的原住民被認為是太平洋群島南島語族語系人民的起源。
+          台灣的陸地面積為13972公里，島上約有2380萬人居住，最主要通用語言為中文、閩南語、客家話。
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231263.22577573112!2d121.42141476695109!3d25.08534034229589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac6b61dbbd8b%3A0xbcd1baad5c06a482!2z5Y-w5YyX5biC!5e0!3m2!1szh-TW!2stw!4v1625238770670!5m2!1szh-TW!2stw"
+          width="500"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <br />
+        <iframe
+          class="yortube"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ySsMfwvnCjw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>

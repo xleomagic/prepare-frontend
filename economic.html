@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台灣發展歷史網頁</title>
+    <meta
+      name="description"
+      content="此網站介紹台灣過去70年的經濟發展與相關政策"
+    />
+
+    <link rel="shortcut icon" href="./taiwanIcon.png" />
+    <link rel="bookmark" href="./taiwanIcon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "GDP"],
+          ["1960", 34394],
+          ["1965", 114762],
+          ["1970", 231397],
+          ["1975", 601778],
+          ["1980", 1522459],
+          ["1985", 2535056],
+          ["1990", 4474288],
+          ["1995", 7391062],
+          ["2000", 10328549],
+          ["2005", 12036675],
+          ["2010", 14060345],
+        ]);
+
+        var options = {
+          title: "過去台灣60年GDP變化",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="twicon/twicon.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="headerTitle">
+        <i class="twicon-main-island"></i>台灣經濟發展歷史
+      </h1>
+      <h3 class="headerText">過去台灣發展得歷史以及相關政策</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html"><i class="twicon-main-island"></i> 首頁</a>
+        </li>
+        <li>
+          <a href="./agriculture.html"
+            ><i class="twicon-electric-pot"></i> 農業改革</a
+          >
+        </li>
+        <li>
+          <a href="./industry.html"
+            ><i class="twicon-ntc-theater"></i> 工業改革</a
+          >
+        </li>
+        <li>
+          <a href="./economic.html" class="active"
+            ><i class="twicon-taipei101"></i> 經濟起飛</a
+          >
+        </li>
+        <!-- <li>
+          <a href="./author.html"><i class="twicon-l-dcard"></i> 關於作者</a>
+        </li> -->
+      </ul>
+    </nav>
+
+    <main>
+      <section class="left">
+        <h4>臺灣經濟發展歷程</h4>
+        <p>
+          臺灣經濟（或稱中華民國經濟）在二次大戰結束後，以臺灣日治時期的農業與輕工業為基礎，逐漸發展起來以中小企業引導投資的小型資本主義經濟體，輔以中華民國政府主管投資大部分的公營事業體、以及眾多國外投資所引導的資本主義經濟體。至今，臺灣的多方面經濟還正在持續增長中。
+        </p>
+        <p>
+          在1951年至1988年間，台灣年均經濟增長率達到9.57%，1988年至2008年間為6.1%，2008年至2015年間為2.8%。農業在GDP中的比重從1952年的35%下降到5%。傳統人力密集型工業已經漸漸由電子產業替代。臺灣的電子工業對世界經濟舉足輕重，一定數量的電腦或電子零部件都是在臺灣所生產的。對外的貿易是台灣重要的經濟命脈，在過去美國和日本長久以來一直都是台灣的前兩大貿易夥伴，而2000至2010左右市場與人才的重心轉移至中國大陸，在當時中國大陸有五萬多個台資企業，長期居留的台商及眷屬則有上百萬人之多，然而伴隨近年來的新南向政策，台資開始逐漸轉向東南亞和歐洲市場，其中以泰國、印度尼西亞、菲律賓、馬來西亞和越南為主要投資國家。
+        </p>
+        <p>
+          在2008年，隨著中華民國二次政黨輪替，重新執政的中國國民黨在政策上緩和兩岸關係並加強與中國大陸的經貿交流關係，簽訂海峽兩岸經濟合作架構協議，根據中華民國財政部統計自2000年以來對中國大陸貿易出口總額增加了約25%，而對美日的出口總額則減少了約18%，現今中華人民共和國佔了中華民國貿易出口總額的40%，在2013年時啟動兩岸貨幣清算機制，金融業在新台幣與人民幣的匯兌轉換上，不再透過美元做為中間貨幣，台灣對中國大陸地區貸總額達2.7兆台幣，是高風險貸款，這顯示台灣經貿已相當依賴中國大陸。
+        </p>
+        <p>
+          台灣是亞洲開發銀行（亞行）、亞太經合會（APEC）、世界貿易組織（WTO）和東南亞國家中央銀行總裁聯合會（SEACEN）的成員，也是經濟合作與發展組織（OECD）觀察員。臺灣在2010年排名前五位的貿易夥伴分別為中國大陸、日本、美國、歐盟和香港。截止至2020年，台灣的外匯儲備共4,962億美元，位列世界第四位。
+        </p>
+        <p>
+          2011年台灣人均GDP達到2萬美元。國際貨幣基金（IMF）預測，2021年台灣人均將達到3萬美元。
+          台灣正積極推動FTA（自由貿易協定），目前台灣已生效的是巴拿馬、瓜地馬拉、尼加拉瓜、薩爾瓦多、宏都拉斯等國的FTA，亦在爭取和日本、美國等國及歐盟等區域組織的FTA。
+        </p>
+        <br />
+        <h4 style="margin-top: 2rem">經濟成長曲線</h4>
+        <br />
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+      </section>
+      <section class="right">
+        <h4>近年台灣經濟成長減緩之結構性因素分析</h4>
+        <p>
+          全球金融危機後，台灣經濟成長減緩的幅度進行拆解。首先，將經濟成長
+          率拆解為反映供給面的潛在產出(potential
+          output)成長率，以及短期的景氣循環成分。
+          估計結果顯示，2011~2015年相較2003~2007年，平均潛在產出成長率下降1.52個百分
+          點，約解釋49.4%經濟成長的降幅，顯示台灣面臨供給面的結構性問題，而短期循環性
+          因素解釋剩餘50.6%經濟成長的減緩。 進而利用成長會計(growth
+          accounting)法則，將潛在產出成長率拆解為勞動、資本 與總要素生產力(total
+          factor productivity, TFP)的貢獻。拆解結果顯示，危機後，勞動、
+          資本與總要素生產力成長皆呈減緩，其中以資本成長減緩對潛在產出成長率的下滑影
+          響最大，總要素生產力成長趨緩的影響效果次之，勞動投入則影響較小。
+          接續探討勞動、資本與總要素生產力等三種投入要素成長率的變化，主要結果如
+          下：(1)台灣面臨嚴峻的人口老化問題，抑低15歲以上民間人口與勞參率成長，致勞動
+          力成長將逐年減緩。(2)危機後，工業與服務業部門資本成長皆減緩，惟工業部門下滑
+          幅度大於服務業，主因總合需求疲弱、經濟前景不明，政策與經濟不確定性，抑制投
+          資成長。(3)創新能量不足，研發支出成長減緩，高等教育學用落差，致總要素生產力
+          成長下滑。
+          本文的拆解結果顯示，台灣同時面臨循環性與結構性問題。面對此經濟困局，宜
+          結合貨幣政策、財政政策及結構性改革，提振台灣成長動能。
+        </p>
+
+        <ul>
+          <li>
+            <p>民國50年以前 主要是以農、林產品初級加工為主，工業發展較緩慢。</p>
+          </li>
+          <li>
+            <p>
+              民國50年以後
+              紡織、食品、電子零件組裝等勞力密集工業興起，成為臺灣主要外銷產品。
+            </p>
+          </li>
+          <li>
+            <p>
+              民國70年以後
+              十大建設完成後，鋼鐵、機械、石化等重工業發展快速；電子資訊業也開始蓬勃發展。
+            </p>
+          </li>
+          <li>
+            民國80年以後 面對國際市場的競爭，產業外移。
+            國內工資上漲，許多勞力密集的產業，外移至東南亞及中國，以取得廉價勞力，以便節省成本。
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
